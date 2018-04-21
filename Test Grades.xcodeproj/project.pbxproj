@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2D4459208B0C970067E042 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D4458208B0C970067E042 /* MainTableViewController.swift */; };
+		FE2D445C208B0D000067E042 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D445B208B0D000067E042 /* Globals.swift */; };
+		FE2D4461208B107C0067E042 /* ExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D4460208B107C0067E042 /* ExamTableViewCell.swift */; };
 		FE8920F7208A695B0078EBFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8920F6208A695B0078EBFE /* AppDelegate.swift */; };
-		FE8920F9208A695B0078EBFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8920F8208A695B0078EBFE /* ViewController.swift */; };
 		FE8920FC208A695B0078EBFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8920FA208A695B0078EBFE /* Main.storyboard */; };
 		FE8920FF208A695B0078EBFE /* Test_Grades.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE8920FD208A695B0078EBFE /* Test_Grades.xcdatamodeld */; };
 		FE892101208A695C0078EBFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE892100208A695C0078EBFE /* Assets.xcassets */; };
 		FE892104208A695C0078EBFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE892102208A695C0078EBFE /* LaunchScreen.storyboard */; };
 		FE89210F208A695C0078EBFE /* Test_GradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE89210E208A695C0078EBFE /* Test_GradesTests.swift */; };
 		FE89211A208A695C0078EBFE /* Test_GradesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892119208A695C0078EBFE /* Test_GradesUITests.swift */; };
+		FE892128208A69D90078EBFE /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892127208A69D90078EBFE /* Exam.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE2D4458208B0C970067E042 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		FE2D445B208B0D000067E042 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		FE2D4460208B107C0067E042 /* ExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamTableViewCell.swift; sourceTree = "<group>"; };
 		FE8920F3208A695B0078EBFE /* Test Grades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Grades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8920F6208A695B0078EBFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE8920F8208A695B0078EBFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE8920FB208A695B0078EBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE8920FE208A695B0078EBFE /* Test_Grades.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test_Grades.xcdatamodel; sourceTree = "<group>"; };
 		FE892100208A695C0078EBFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		FE892115208A695C0078EBFE /* Test GradesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test GradesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE892119208A695C0078EBFE /* Test_GradesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_GradesUITests.swift; sourceTree = "<group>"; };
 		FE89211B208A695C0078EBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE892127208A69D90078EBFE /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE2D445A208B0CE90067E042 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FE2D445B208B0D000067E042 /* Globals.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FE2D445D208B0F690067E042 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FE2D4460208B107C0067E042 /* ExamTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FE6024CD208B0B7B00E91FE4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FE8920FA208A695B0078EBFE /* Main.storyboard */,
+				FE892102208A695C0078EBFE /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		FE8920EA208A695B0078EBFE = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +130,13 @@
 		FE8920F5208A695B0078EBFE /* Test Grades */ = {
 			isa = PBXGroup;
 			children = (
+				FE2D4458208B0C970067E042 /* MainTableViewController.swift */,
+				FE2D445D208B0F690067E042 /* Cells */,
+				FE2D445A208B0CE90067E042 /* Utils */,
+				FE6024CD208B0B7B00E91FE4 /* UI */,
+				FE89212A208B0AD60078EBFE /* Model */,
+				FEA3C0FE208B0B9900025F24 /* Assets */,
 				FE8920F6208A695B0078EBFE /* AppDelegate.swift */,
-				FE8920F8208A695B0078EBFE /* ViewController.swift */,
-				FE8920FA208A695B0078EBFE /* Main.storyboard */,
-				FE892100208A695C0078EBFE /* Assets.xcassets */,
-				FE892102208A695C0078EBFE /* LaunchScreen.storyboard */,
 				FE892105208A695C0078EBFE /* Info.plist */,
 				FE8920FD208A695B0078EBFE /* Test_Grades.xcdatamodeld */,
 			);
@@ -126,6 +159,22 @@
 				FE89211B208A695C0078EBFE /* Info.plist */,
 			);
 			path = "Test GradesUITests";
+			sourceTree = "<group>";
+		};
+		FE89212A208B0AD60078EBFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE892127208A69D90078EBFE /* Exam.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FEA3C0FE208B0B9900025F24 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FE892100208A695C0078EBFE /* Assets.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8920F9208A695B0078EBFE /* ViewController.swift in Sources */,
+				FE2D4461208B107C0067E042 /* ExamTableViewCell.swift in Sources */,
+				FE892128208A69D90078EBFE /* Exam.swift in Sources */,
+				FE2D445C208B0D000067E042 /* Globals.swift in Sources */,
 				FE8920FF208A695B0078EBFE /* Test_Grades.xcdatamodeld in Sources */,
+				FE2D4459208B0C970067E042 /* MainTableViewController.swift in Sources */,
 				FE8920F7208A695B0078EBFE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8S9BJAE5L;
 				INFOPLIST_FILE = "Test Grades/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8S9BJAE5L;
 				INFOPLIST_FILE = "Test Grades/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
